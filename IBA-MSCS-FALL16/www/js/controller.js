@@ -12,7 +12,7 @@ angular.module('starter.controllers', [])
     ];
 }])
 
-.controller('program', ['$scope', '$stateParams', function($scope, $stateParams) {
+.controller('program', ['$scope', '$stateParams', '$ionicHistory', function($scope, $stateParams, $ionicHistory) {
     $scope.pageTitle = $stateParams.param1;
     $scope.courses = [
         {
@@ -25,6 +25,7 @@ angular.module('starter.controllers', [])
         }
     ];
     $scope.goBack = function() {
-        
+        console.log($ionicHistory);
+        $ionicHistory.goBack();
     }
 }])

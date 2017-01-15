@@ -6,14 +6,14 @@
       </div>
       <div class="row">
           <div class="col">
-              <div class="button button-full button-outline button-dark"><h2>Offered Programs</h2></div>
+              <div class="button button-full button-outline button-dark"><h2>{{pageTitle}}</h2></div>
           </div>
       </div>
       <div class="row">
           <div class="col">
-              <div class="list card">
-                  <a href="#/program" class="item item-icon-left">
-                      <i class="icon ion-code"></i>MS Computer Science
+              <div class="list card" ng-repeat="program in programs">
+                  <a href="#/program/{{program.title}}" class="item item-icon-left">
+                      <i class="icon ion-code"></i>{{program.title}}
                   </a>
               </div>
           </div>

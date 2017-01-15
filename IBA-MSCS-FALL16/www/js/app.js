@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             templateUrl: 'templates/main.html'
         })
         .state('program', {
-            url: '/program',
+            url: '/program/:param1',
             controller: 'program',
             templateUrl: 'templates/program.html'
         })
